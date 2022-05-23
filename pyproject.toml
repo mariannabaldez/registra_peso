@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "registra_peso"
+version = "0.1.0"
+description = ""
+authors = ["mariannabaldez <marianna.baldez@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.78.0"
+SQLAlchemy = "^1.4.36"
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
