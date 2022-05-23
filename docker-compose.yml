@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  postgresql:
+    image: postgres:alpine
+    container_name: registra-peso-container
+    environment:
+      - POSTGRES_DB=registra-peso-db
+      - POSTGRES_PASSWORD=development
+    ports:
+      - 5432:5432
+    volumes:
+      - registra_peso_psql:/var/lib/postgresql/data
+volumes:
+  registra_peso_psql:
