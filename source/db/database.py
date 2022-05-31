@@ -16,5 +16,14 @@ engine = sqlalchemy.create_engine(
     }
 )
 
+tabela_medidas = sqlalchemy.Table(
+    "data",
+    metadata,
+    Column(
+        'id', Integer, Identity(start=42, cycle=True), primary_key=True
+    ),
+    Column('data', String)
+)
+
 
 metadata.create_all(engine)
