@@ -1,4 +1,3 @@
-from msilib import Table
 import sqlalchemy
 import databases
 
@@ -6,7 +5,7 @@ import databases
 SQLALCHEMY_DATABASE_URL = "postgresql://postegres:development@localhost/registra-peso-db"
 # "postgresql://user:password@postgresserver/db"
 
-database = databases.Database(SQLALCHEMY_DATABASE_URL)s
+database = databases.Database(SQLALCHEMY_DATABASE_URL)
 metadata = sqlalchemy.MetaData()
 
 engine = sqlalchemy.create_engine(
