@@ -15,13 +15,32 @@ engine = sqlalchemy.create_engine(
     }
 )
 
+
 tabela_medidas = sqlalchemy.Table(
-    "data",
+    "medidas",
     metadata,
-    Column(
-        'id', Integer, Identity(start=42, cycle=True), primary_key=True
+    sqlalchemy.Column(
+        'id',
+        sqlalchemy.Integer,
+        #sqlalchemy.Identity(start=42, cycle=True)
+        primary_key=True,
     ),
-    Column('data', String)
+    #sqlalchemy.Column('medidas', String)
+    sqlalchemy.Column(
+        "pescoço",
+        sqlalchemy.String,
+        nullable=False,
+    ),
+    sqlalchemy.Column(
+        "cintura",
+        sqlalchemy.String,
+        nullable=False,
+    ),
+    sqlalchemy.Column(
+        "quadril",
+        sqlalchemy.String,
+        nullable=False,
+    ),
 )
 
 
