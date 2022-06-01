@@ -23,7 +23,9 @@ tabela_login = sqlalchemy.Table(
         'id',
         sqlalchemy.Integer,
         primary_key=True,
+        unique=True,
     )
+
 )
 
 tabela_medidas = sqlalchemy.Table(
