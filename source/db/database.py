@@ -22,9 +22,10 @@ tabela_login = sqlalchemy.Table(
     sqlalchemy.Column(
         'id',
         sqlalchemy.Integer,
-        primary_key=True, 
+        primary_key=True,
+        unique=True,
     )
-    )
+
 )
 
 tabela_medidas = sqlalchemy.Table(
