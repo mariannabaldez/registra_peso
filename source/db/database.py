@@ -20,7 +20,10 @@ tabela_login = sqlalchemy.Table(
     "login",
     metadata,
     sqlalchemy.Column(
-        pass
+        'id',
+        sqlalchemy.Integer,
+        primary_key=True, 
+    )
     )
 )
 
